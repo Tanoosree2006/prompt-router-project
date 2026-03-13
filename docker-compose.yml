@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  prompt-router:
+    build: .
+    container_name: prompt-router
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
